@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Formulários em HTML</title>
+
+</head>
+<body>
+    <h1>Tags Form</h1>
+    <!-- O método post encapsula os dados do formulário -->
+    <!-- O método get envia os dados do formulário pela URL -->
+    <!-- Autocomplete: on/off é para ativar ou desativar o preenchimento automático do formulário -->
+    <!--No HTML o que começa com on é um evento, no caso onsubmit é um evento que ocorre quando o formulário é submetido -->
+    <!-- O atributo onsubmit é para chamar a função validateForm() que está no arquivo validate.js -->
+    <!-- O atributo action é para chamar o arquivo cadastrar.php que está na mesma pasta que o index.html -->
+    <form name="signup" autocomplete="off" onsubmit="alert('Formulário enviado com sucesso!')" method="post">
+        Nome: <input type="text" name="nome" id="nome"><br>
+        Idade: <input type="number" name="idade" id="idade"><br>
+        Senha: <input type="password" name="senha" id="senha"><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h1>Tags Input e seus tipos</h1>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" placeholder="Digite sua idade" min="0" max="100"><br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha"><br>
+        <label for="email">Email:</label>
+        <!-- O type email já valida se o email está correto -->
+        <input type="email" name="email" id="email" placeholder="Digite seu email"><br>
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data"><br>
+        <label for="mes">Mês:</label>
+        <input type="month" name="mes" id="mes"><br>
+        <label for="semana">Semana:</label>
+        <input type="week" name="semana" id="semana"><br>
+        <label for="hora">Hora:</label>
+        <input type="time" name="hora" id="hora"><br>
+        <label for="cor">Cor:</label>
+        <input type="color" name="cor" id="cor"><br>
+        <label for="range">Range:</label>
+        <input type="range" name="range" id="range" min="0" max="100" step="5" value="50" ><br>
+        <label for="arquivo">Arquivo:</label>
+        <input type="file" name="arquivo" id="arquivo"><br>
+        <!-- O type checkbox permite que mais de uma opção seja selecionada -->
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" name="checkbox" id="checkbox" value="2">Opção 1 
+        <input type="checkbox" name="checkbox" id="checkbox" value="3">Opção 2 <br>
+        <!-- O type radio só permite que uma opção seja selecionada -->
+        <label for="radio">Radio:</label>
+        <input type="radio" name="radio" id="radio" value="1">Opção 1
+        <input type="radio" name="radio" id="radio" value="2">Opção 2 <br>
+        <!-- O type hidden é para enviar dados que o usuário não pode ver -->
+        <label for="hidden">Hidden:</label>
+        <input type="hidden" name="hidden" id="hidden" value="Escondido"><br>
+        <label for="search">Search:</label>
+        <input type="search" name="search" id="search" placeholder="Pesquise aqui"><br>
+    </form>
+
+    <h1> Button e seus tipos</h1>
+    <form>
+        <button type="button" onmouseover="alert('Você passou o mouse por cima do botão!')">Clique aqui</button>
+        <!-- O type submit envia os dados do formulário -->
+        <!-- Onsubmit é um evento que ocorre quando o formulário é submetido, pode ser usado para validar o formulário --> 
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <h1> Select e seus tipos</h1>
+    <form>
+        <label for="select">Select:</label>
+        <select name="select" id="select">
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+        </select><br>
+        <label for="select-multiple">Select Multiple:</label>
+        <select name="select-multiple" id="select-multiple" multiple>
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+        </select><br>
+        <label for="datalist">Datalist:</label>
+        <input list="browsers" name="browser" id="datalist">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist><br>
+        <label for="optgroup">Optgroup:</label>
+        <select name="optgroup" id="optgroup">
+            <optgroup label="Grupo 1">
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+            </optgroup>
+            <optgroup label="Grupo 2">
+                <option value="3">Opção 3</option>
+                <option value="4">Opção 4</option>
+            </optgroup>
+        </select><br>
+    </form>
+
+    <h1>Textarea</h1>
+    <form>
+        <label for="textarea">Textarea:</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Digite aqui"></textarea><br>
+    </form>
+</body>
+</html>
