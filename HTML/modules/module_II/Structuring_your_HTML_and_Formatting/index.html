@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estruturando seu HTML e Formatações</title>
+
+    <style>
+        .card1 {
+            border: solid 1px #000;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: calc(50% - 100px);
+            bottom: 0;
+            z-index: 2;
+            background-color: rgb(255, 0, 0);
+            top: 90%;
+        }
+        .card2 {
+            border: solid 1px #000;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: calc(50% - 200px);
+            bottom: 0;
+            z-index: 1;
+            background-color: rgb(0, 255, 0);
+            top: 100%;
+        }
+    </style>
 </head>
 <body>
     <h1> Formatando textos: < strong >, < i >, < b > e < u > </h1>
@@ -42,17 +67,48 @@
             Telefone: <input type="tel"><br>
         </fieldset>
     </form>
-
-
-    <h1> Tag < embed > </h1>
-    <p> A tag < embed > é usada para incorporar conteúdo multimídia, como áudio ou vídeo, em um documento HTML. </p>
-    <embed src="video.mp4" width="500" height="300" controls>
     
+    <p> Fieldset com bordas curvas </p>
+    <form>
+        <fieldset style="border-radius: 10px;">
+            <legend>Informações Pessoais</legend>
+            Nome: <input type="text"><br>
+            Email: <input type="email"><br>
+            Telefone: <input type="tel"><br>
+        </fieldset>
+    </form>
+
+    <h1>Tag < embed ></h1>
+        <p>A tag <embed> é usada para incorporar conteúdo multimídia, como áudio ou vídeo, em um documento HTML.</p>
+        <embed src="Music/BRONSON_HEART_ATTACK_(feat._lau.ra).mp3" width="300" height="45" autostart="false" loop="false">
+        
+    <h1>Tag < audio ></h1>
+    <p>A tag < audio > é usada para incorporar conteúdo de áudio, como música ou outros sons, em um documento HTML.</p>
+    <audio id="myAudio" src="Music/BRONSON_HEART_ATTACK_(feat._lau.ra).mp3" controls loop>
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+    
+    <h1> Flash Player </h1>
+    <p> O Flash Player é um plugin que permite a execução de conteúdo multimídia, como animações e vídeos, em navegadores da web. </p>
+    <p> O plugin Flash Player foi descontinuado em 2020 e não é mais suportado pela Adobe. </p>
+    <object width="400" height="50" data="Music/BRONSON_HEART_ATTACK_(feat._lau.ra).mp3">
+        <param name="autoplay" value="false">
+        <param name="loop" value="false">
+        <param name="controller" value="true">
+    </object>
+
+    <h1> Java Applet </h1>
+    <p> A tag < applet > é usada para incorporar um applet Java em um documento HTML. </p>
+    <p> O applet a seguir exibe a mensagem "Hello, World!" na tela. </p>
+    <p> Era muito usado para criar jogos e animações, mas hoje em dia é pouco utilizado. </p>
+    <applet code="HelloWorld.class" width="300" height="300">
+        Seu navegador não suporta Java Applet.
+    </applet>
+
 
     <h1> Tag < iframe > </h1>
     <p> A tag < iframe > é usada para incorporar uma página da web em um documento HTML. </p>
-    <iframe src="https://www.w3schools.com" width="500" height="300"></iframe>
-    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LqAacGki52g?si=JuRjTyuL8xZoOcyu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
 
     <h1> Tag < abbr > </h1>
     <p> A tag < abbr > é usada para definir uma abreviação ou sigla. </p>
@@ -101,6 +157,33 @@
         pré-formatado
         com várias linhas
     </pre>
+
+    <h1> Resenha de Cores </h1>
+    <p> RGB (Red, Green, Blue) é um modelo de cor aditivo em que as cores vermelho, verde e azul são combinadas em várias intensidades para criar uma ampla gama de cores. </p>
+    <p> HEX (Hexadecimal) é um sistema de numeração posicional que representa números em base 16. </p>
+    <p> HSL (Hue, Saturation, Lightness) é um modelo de cor cromática que define as cores em termos de matiz, saturação e luminosidade. </p>
+    <p> CMYK (Cyan, Magenta, Yellow, Key) é um modelo de cor subtrativo usado para impressão em cores. </p>
+    <p> HSV (Hue, Saturation, Value) é um modelo de cor cromática que define as cores em termos de matiz, saturação e valor. </p>
+    <p> LAB (Lightness, a, b) é um modelo de cor cromática que define as cores em termos de luminosidade e duas coordenadas de cor. </p>
+    <p> XYZ é um modelo de cor cromática que define as cores em termos de tristimulus. </p>
+    <p> LCH (Lightness, Chroma, Hue) é um modelo de cor cromática que define as cores em termos de luminosidade, croma e matiz. </p>
+    <p> LUV (Lightness, u, v) é um modelo de cor cromática que define as cores em termos de luminosidade e duas coordenadas de cor. </p>
+    <p> YUV (Luminance, Chrominance) é um modelo de cor cromática que define as cores em termos de luminância e crominância. </p>
+    <p> YCbCr (Luminance, Chrominance Blue, Chrominance Red) é um modelo de cor cromática que define as cores em termos de luminância e duas coordenadas de cor. </p>
+    <p> YIQ (Luminance, In-phase, Quadrature) é um modelo de cor cromática que define as cores em termos de luminância e duas coordenadas de cor. </p>
+    <p> YPbPr (Luminance, Blue-difference, Red-difference) é um modelo de cor cromática que define as cores em termos de luminância e duas coordenadas de cor. </p>
+    <p> YDbDr (Luminance, Blue-difference, Red-difference) é um modelo de cor cromática que define as cores em termos de luminância e duas coordenadas de cor. </p>
+    <p> HSLA (Hue, Saturation, Lightness, Alpha) é um modelo de cor cromática que define as cores em termos de matiz, saturação, luminosidade e transparência. </p>
+    <p> RGBA (Red, Green, Blue, Alpha) é um modelo de cor aditivo em que as cores vermelho, verde e azul são combinadas em várias intensidades para criar uma ampla gama de cores, com
+
+
+
+
+    <div class="card1"></div>
+    <div class="card2"></div>
+
+
+
 
 </body>
 </html>
