@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working_with_Media_using_HTML</title>
+    <h1> Trabalhando com Mídias utilizando HTML </h1>
+
+    <h2> O que são Tags de Mídia? </h2>
+    <p> As tags de mídia são usadas para incorporar conteúdo multimídia, como áudio, vídeo e animações, em um documento HTML.
+    As tags de mídia incluem < audio >, < video >, < embed >, < object >, < applet > e < iframe >. 
+    E são utilizadas para criar uma experiência de usuário mais rica e envolvente e para criar conteúdo interativo e dinâmico. </p>
+    
+    <h2> Tag < img > </h2>
+    <p> A tag < img > é usada para incorporar imagens em um documento HTML.
+    Dos atributos: <br>
+    - <mark> src </mark> - especifica o URL da imagem. <br>
+    - <mark> alt </mark> - especifica um texto alternativo para a imagem, se a imagem não puder ser exibida. <br>
+    - <mark> width </mark> - especifica a largura da imagem, em pixels. <br>
+    - <mark> height </mark> - especifica a altura da imagem, em pixels.<br>
+    - <mark> style </mark> - especifica um estilo CSS para a imagem. <br>
+    - <mark> usemap </mark> - especifica uma imagem como um mapa de imagem. <br>
+    - <mark> ismap </mark> - especifica que a imagem é um mapa de imagem. <br>
+    - <mark> loading </mark> - especifica como a imagem deve ser carregada quando a página é carregada. <br>
+    - <mark> referrerpolicy </mark> - especifica a política de referência para a imagem. <br>
+    - <mark> crossorigin </mark> - especifica uma política de CORS para a imagem. <br>
+    - <mark> decoding </mark> - especifica como o navegador deve lidar com a decodificação da imagem. <br>
+    - <mark> importance </mark> - especifica a importância da imagem. <br>
+    - <mark> intrinsicsize </mark> - especifica as dimensões intrínsecas da imagem. <br>
+    - <mark> loading </mark> - especifica como a imagem deve ser carregada quando a página é carregada. <br>
+    - <mark> referrerpolicy </mark> - especifica a política de referência para a imagem. <br>
+    - <mark> sizes </mark> - especifica os tamanhos de imagem responsivos. <br>
+    - <mark> srcset </mark> - especifica as imagens a serem exibidas em diferentes situações. <br>
+    - <mark> svg </mark> - especifica a imagem como um gráfico vetorial escalável. <br>
+    - <mark> title </mark> - especifica um título para a imagem. <br>
+   </p>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+
+    <h2> Tag < audio > </h2>
+    <p> A tag < audio > é usada para incorporar arquivos de som em um documento HTML.
+    Dos atributos: <br>
+    - <mark> src </mark> - especifica o URL do arquivo de áudio. <br>
+    - <mark> autoplay </mark> - especifica que o áudio deve começar a tocar assim que for carregado. <br>
+    - <mark> controls </mark> - especifica que os controles de áudio devem ser exibidos (como reproduzir / pausar, volume, etc.). <br>
+    - <mark> loop </mark> - especifica que o áudio deve começar de novo quando terminar. <br>
+    - <mark> muted </mark> - especifica que o áudio deve ser reproduzido sem som. <br>
+    - <mark> preload </mark> - especifica se e como o áudio deve ser carregado quando a página é carregada. <br>
+    - <mark> volume </mark> - especifica o volume do áudio. <br>
+    - <mark> crossorigin </mark> - especifica uma política de CORS para o arquivo de áudio. <br>
+    - <mark> mediagroup </mark> - especifica um grupo de mídia ao qual o arquivo de áudio pertence. <br>
+    - <mark> controlslist </mark> - especifica os controles que devem ser exibidos com o áudio. <br>
+    - <mark> disableremoteplayback </mark> - especifica se o áudio deve ser reproduzido remotamente. <br>
+    - <mark> intrinsicsize </mark> - especifica as dimensões intrínsecas do áudio. <br>
+    - <mark> poster </mark> - especifica uma imagem para ser exibida enquanto o arquivo de áudio é baixado ou até que o usuário inicie a reprodução. <br>
+    - <mark> preload </mark> - especifica se e como o áudio deve ser carregado quando a página é carregada. <br>
+    - <mark> srcset </mark> - especifica os arquivos de áudio a serem exibidos em diferentes situações. <br>
+    - <mark> type </mark> - especifica o tipo de arquivo de áudio. <br>
+    - <mark> crossorigin </mark> - especifica uma política de CORS para o arquivo de áudio. <br>
+    - <mark> referrerpolicy </mark> - especifica a política de referência para o arquivo de áudio. <br>
+    
+    </p>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    </audio><br>
+    <input type="range" id="volume" name="volume" min="0" max="100"><br>
+
+    <h2> Tag < video > </h2>
+    <p> A tag < video > é usada para incorporar vídeos em um documento HTML.
+    Dos atributos: <br>
+    - <mark> src </mark> - especifica o URL do arquivo de vídeo. <br>
+    - <mark> autoplay </mark> - especifica que o vídeo deve começar a tocar assim que for carregado. <br>
+    - <mark> controls </mark> - especifica que os controles de vídeo devem ser exibidos (como reproduzir / pausar, volume, etc.). <br>
+    - <mark> height </mark> - especifica a altura do vídeo em pixels. <br>
+    - <mark> loop </mark> - especifica que o vídeo deve começar de novo quando terminar. <br>
+    - <mark> muted </mark> - especifica que o vídeo deve ser reproduzido sem som. <br>
+    - <mark> poster </mark> - especifica uma imagem para ser exibida enquanto o vídeo é baixado ou até que o usuário inicie a reprodução. <br>
+    - <mark> preload </mark> - especifica se e como o vídeo deve ser carregado quando a página é carregada. <br>
+    - <mark> width </mark> - especifica a largura do vídeo em pixels. <br>
+    - <mark> crossorigin </mark> - especifica uma política de CORS para o arquivo de vídeo. <br>
+    - <mark> mediagroup </mark> - especifica um grupo de mídia ao qual o arquivo de vídeo pertence. <br>
+    - <mark> playsinline </mark> - especifica que o vídeo deve ser reproduzido no próprio quadro, em vez de em tela cheia. <br>
+    - <mark> controlslist </mark> - especifica os controles que devem ser exibidos com o vídeo. <br>
+    - <mark> disableremoteplayback </mark> - especifica se o vídeo deve ser reproduzido remotamente. <br>
+    - <mark> intrinsicsize </mark> - especifica as dimensões intrínsecas do vídeo. <br>
+    - <mark> srcset </mark> - especifica os arquivos de vídeo a serem exibidos em diferentes situações. <br>
+    - <mark> type </mark> - especifica o tipo de arquivo de vídeo. <br>
+    </p>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+
+    <h2> Tag < track > </h2>
+    <p> A tag < track > é usada para especificar texto de legenda para um elemento < video >.
+    Dos atributos: <br>
+    - <mark> default </mark> - especifica que a legenda deve ser exibida por padrão. <br>
+    - <mark> kind </mark> - especifica o tipo de legenda. <br>
+    - <mark> label </mark> - especifica o idioma da legenda. <br>
+    - <mark> src </mark> - especifica o URL do arquivo de legenda. <br>
+    - <mark> srclang </mark> - especifica o idioma da legenda. <br>
+    </p>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <track src="https://www.w3schools.com/html/mov_bbb.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+
+    <h2> Tag < iframe > </h2>
+    <p> A tag < iframe > é usada para incorporar outro documento HTML em um documento HTML.
+    Dos atributos: <br>
+    - <mark> src </mark> - especifica o URL do documento a ser incorporado. <br>
+    - <mark> width </mark> - especifica a largura do iframe em pixels. <br>
+    - <mark> height </mark> - especifica a altura do iframe em pixels. <br>
+    - <mark> name </mark> - especifica o nome do iframe. <br>
+    - <mark> sandbox </mark> - especifica se um iframe deve ser carregado em um sandbox. <br>
+    - <mark> seamless </mark> - especifica que o iframe deve ser exibido sem bordas. <br>
+    - <mark> srcdoc </mark> - especifica o conteúdo do documento a ser incorporado. <br>
+    - <mark> allowfullscreen </mark> - especifica se o iframe pode ser exibido em tela cheia. <br>
+    - <mark> allowpaymentrequest </mark> - especifica se o iframe pode fazer solicitações de pagamento. <br>
+    - <mark> csp </mark> - especifica a política de segurança do conteúdo do documento a ser incorporado. <br>
+    - <mark> referrerpolicy </mark> - especifica a política de referência para o documento a ser incorporado. <br>
+    - <mark> loading </mark> - especifica como o iframe deve ser carregado quando a página é carregada. <br>
+    - <mark> importance </mark> - especifica a importância do iframe. <br>
+    - <mark> referrerpolicy </mark> - especifica a política de referência para o iframe. <br>
+    
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aOPcCIuuMhg?si=d79XoRJ939QTr5BW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
