@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Understanding Semantic HTML </title>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li a{
+            padding: 10px 15px;
+            color: blueviolet;
+            text-decoration: none;
+            border-radius: 15px 15px 0 0;
+        }
+        nav ul li a:hover{
+            background-color: blueviolet;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 style="color: #184e77"> Entendendo HTML Semântico </h2>
+    <p> HTML Semântico é um código HTML que enfatiza o significado do conteúdo em vez de sua aparência. </p>
+    <p> Em HTML Semântico, as tags de marcação são usadas para identificar o significado do conteúdo, em vez de sua aparência. 
+    Por exemplo, em vez de usar uma tag < div > para criar uma seção de conteúdo, você pode usar uma tag < section >.
+    Isso torna o código mais legível e acessível para os desenvolvedores e usuários. </p>
+<code style="color: red">
+    < body ><br>
+    &nbsp;&nbsp;&nbsp;< div class="cabecalho" >...< /div ><br>
+    &nbsp;&nbsp;&nbsp;< div class="corpo" >...< /div ><br>
+    &nbsp;&nbsp;&nbsp;< div class="rodape" >...< /div ><br>
+    < /body ><br>
+</code>
+    <br>
+<code style="color: red">
+    < body ><br>
+    &nbsp;&nbsp;&nbsp;< header >...< /header ><br>
+    &nbsp;&nbsp;&nbsp;< main >...< /main ><br>
+    &nbsp;&nbsp;&nbsp;< footer >...< /footer ><br>
+    < /body ><br>
+</code>
+<blockquote>
+    <i>"HTML Semântico é um código HTML que enfatiza a estrutura e o significado do conteúdo em vez de sua aparência."</i>
+</blockquote>
+<h2 style="color: #184e77"> Diferenças HTML 4 para HTML 5 </h2>
+<p> HTML 4 é uma linguagem de marcação que define a estrutura e o layout de uma página da web. 
+    HTML 5 é a versão mais recente do HTML e inclui novos elementos, atributos e APIs que tornam a criação de páginas da web mais fácil e eficiente. 
+    Além disso, o HTML 5 é mais semântico do que o HTML 4, o que significa que os elementos têm significados mais claros e precisos. 
+    Isso torna o código mais legível e acessível para os desenvolvedores e usuários. </p>
+
+<h4 style="color:#34a0a4">Novos elementos HTML 5</h4>
+- <mark> < article > </mark> - define um artigo independente. <br>
+- <mark> < aside > </mark> - define conteúdo que é separado do conteúdo principal. <br>
+- <mark> < details > </mark> - define detalhes adicionais que o usuário pode visualizar ou ocultar. <br>    
+- <mark> < figcaption > </mark> - define uma legenda para um elemento < figure >. <br>
+- <mark> < figure > </mark> - define conteúdo multimídia, como imagens, gráficos, ilustrações, etc. <br>
+- <mark> < footer > </mark> - define um rodapé para um documento ou seção. <br>
+- <mark> < header > </mark> - define um cabeçalho para um documento ou seção. <br>
+- <mark> < main > </mark> - define o conteúdo principal de um documento. <br>
+- <mark> < mark > </mark> - define texto marcado. <br>
+- <mark> < nav > </mark> - define uma seção de navegação. <br>
+- <mark> < section > </mark> - define uma seção em um documento. <br>
+- <mark> < summary > </mark> - define um cabeçalho para o elemento < details >. <br>
+- <mark> < time > </mark> - define uma data / hora. <br>
+- <mark> < main > </mark> - define o conteúdo principal de um documento. <br>
+
+<h4 style="color:#34a0a4"> Depreciados em HTML 5 </h4>
+- <mark> < basefont > </mark> - define a fonte base para o texto em um documento. <br>
+- <mark> < big > </mark> - define texto grande. <br>
+- <mark> < center > </mark> - define texto centralizado. <br>
+- <mark> < font > </mark> - define a fonte, a cor e o tamanho do texto. <br>
+- <mark> < strike > </mark> - define texto riscado. <br>
+- <mark> < tt > </mark> - define texto de teletipo. <br>
+- <mark> < frame > </mark> - define um quadro em um conjunto de quadros. <br>
+- <mark> < frameset > </mark> - define um conjunto de quadros. <br>
+
+<h2 style="color: #184e77"> Acessibilidade </h2>
+<p> HTML Semântico também é importante para a acessibilidade da web. 
+    Ao usar tags de marcação semântica, como < header >, < main >, < footer >, etc., você está tornando seu conteúdo mais acessível para usuários com deficiências visuais ou cognitivas. 
+    Isso ocorre porque as tags semânticas fornecem informações adicionais sobre a estrutura e o significado do conteúdo, o que pode ser útil para leitores de tela e outros dispositivos de assistência. </p>
+
+   <img src="https://cdn.pensador.com/img/frase/ma/rc/marco_aurelio_ainda_que_tuas_forcas_parecam_insuficient_lnrpddz.jpg" alt="Ainda que tuas forças pareçam insuficientes para a tarefa que tens diante de ti, não assumas que está fora do alcance dos poderes humanos. Se algo está dentro da capacidade do homem, crê: também está dentro de tuas possibilidades.
+   Frase do Imperador Romano Marco Aurélio">
+<h4 style="color:#34a0a4"> ARIA </h4>
+<p> Além disso, o HTML Semântico pode ser combinado com o ARIA (Accessible Rich Internet Applications) para fornecer uma experiência mais acessível para os usuários. 
+    O ARIA é uma especificação do W3C que define como tornar o conteúdo da web e as aplicações da web mais acessíveis para pessoas com deficiências. 
+    Ele fornece atributos adicionais que podem ser usados para descrever o significado e a função dos elementos da interface do usuário, o que pode ser útil para leitores de tela e outros dispositivos de assistência. </p>
+
+<h2 style="color: #184e77"> Web Scraping </h2>
+
+<h4 style="color:#34a0a4"> Ratreador ou Crawlers </h4>
+<p> O web scraping é uma técnica usada para extrair dados de sites da web. 
+    Isso é feito usando um programa de computador que acessa o site e extrai as informações desejadas. 
+    O web scraping é frequentemente usado para coletar dados para análise ou pesquisa, mas também pode ser usado para coletar informações pessoais ou confidenciais. 
+    Por esse motivo, o web scraping é frequentemente considerado uma prática controversa e pode ser ilegal em alguns casos. </p>
+    Crawlers são programas de computador que acessam a web e coletam informações sobre sites e páginas da web.
+    Eles são usados por mecanismos de busca para indexar o conteúdo da web e fornecer resultados de pesquisa relevantes para os usuários.
+    Os crawlers funcionam acessando uma página da web, analisando seu conteúdo e seguindo os links para outras páginas da web.
+    Eles coletam informações sobre o conteúdo, a estrutura e os links de um site e as armazenam em um banco de dados para uso posterior.
+
+    <blockquote>
+        <i>
+            "Rastreador" (Crawler - às vezes também chamado de "robô" ou "indexador") é um termo genérico para qualquer programa usado para descobrir e examinar sites automaticamente seguindo links entre páginas da Web.
+        </i>
+    </blockquote>
+
+    - <b>Googlebot</b>: é o rastreador da web do Google, que é usado para indexar o conteúdo da web e fornecer resultados de pesquisa relevantes para os usuários.<br>
+    - <b>Bingbot</b>: é o rastreador da web do Bing, que é usado para indexar o conteúdo da web e fornecer resultados de pesquisa relevantes para os usuários.<br>
+    - <b>Yandexbot</b>: é o rastreador da web do Yandex, que é usado para indexar o conteúdo da web e fornecer resultados de pesquisa relevantes para os usuários.<br>
+
+    < h4 style="color:#34a0a4"> SEO </h4>
+    <p> SEO (Search Engine Optimization) é o processo de otimização de um site para melhorar sua visibilidade nos resultados de pesquisa. 
+        Isso é feito por meio de técnicas como a criação de conteúdo de alta qualidade, a otimização de palavras-chave e a construção de links. 
+        O SEO é importante porque pode ajudar a aumentar o tráfego para um site, o que pode levar a mais vendas, leads e receita. 
+        Além disso, o SEO pode ajudar a melhorar a experiência do usuário, tornando um site mais fácil de navegar e mais rápido de carregar. </p>
+
+    <h4 style="color:#34a0a4"> Black Hat SEO </h4>
+    <p> Black Hat SEO é o uso de técnicas de SEO que violam as diretrizes dos mecanismos de pesquisa. 
+        Isso inclui práticas como a criação de links de spam, a criação de conteúdo duplicado e a ocultação de texto. 
+        O Black Hat SEO é considerado uma prática antiética e pode resultar em penalidades dos mecanismos de pesquisa, como a desindexação de um site. </p>
+    
+    <h4 style="color:#34a0a4"> White Hat SEO </h4>
+    <p> White Hat SEO é o uso de técnicas de SEO que seguem as diretrizes dos mecanismos de pesquisa. 
+        Isso inclui práticas como a criação de conteúdo de alta qualidade, a otimização de palavras-chave e a construção de links naturais. 
+        O White Hat SEO é considerado uma prática ética e pode ajudar a melhorar a visibilidade de um site nos resultados de pesquisa. </p>
+    
+    <h2 style="color: #184e77"> Main, Header e Footer </h2>
+    <p> O elemento < main > define o conteúdo principal de um documento. É permitido apenas um elemento < main > em um documento.
+        Isso pode incluir o conteúdo principal de um site, como artigos, postagens de blog, etc. Não pode ser aninhado em um elemento < article >, < aside >, < footer >, < header > ou < nav >. </p>
+        <p> O elemento < header > define um cabeçalho para um documento ou seção. 
+        Isso pode incluir o logotipo de um site, o título de uma página, etc. </p>
+        <p>O elemento < footer > define um rodapé para um documento ou seção. 
+        Isso pode incluir informações de contato, links para páginas relacionadas, etc. </p>
+
+        <h2 style="color: #184e77"> Aside, Section e Nav </h2>
+        <p> Aside é um elemento HTML que define conteúdo que é separado do conteúdo principal de um documento. 
+            Isso pode incluir conteúdo relacionado, como barras laterais, notas de rodapé, etc. </p>
+            <p> Section é um elemento HTML que define uma seção em um documento. 
+            Isso pode incluir conteúdo relacionado, como artigos, postagens de blog, etc. </p>
+            <p> Nav é um elemento HTML que define uma seção de navegação. 
+            Isso pode incluir links para outras páginas, menus de navegação, etc. </p>
+            
+            <!-- nav>ul>li*3>a -->
+            <nav>
+                <ul>
+                    <li><a href="#">Nome</a></li>
+                    <li><a href="#">Profissão</a></li>
+                    <li><a href="tel:+5562993905289">Telefone</a></li>
+                </ul>
+            </nav>
+
+            <h2 style="color: #184e77"> Article, Blockquote e Q </h2>
+            <p> Article é um elemento HTML que define um artigo independente. 
+                Isso pode incluir conteúdo relacionado, como postagens de blog, notícias, etc.
+                Permite o aninhamento de elementos < article >:<br>
+                <code style="color: red">
+                    < article ><br>
+                    < p > Qual a sua linguagem de programação favorita? < /p ><br>
+                    < p > Pergunta feita em < time pubdate="2024-02-18">18 de fevereiro de 2024< /time > < /p ><br>
+                    &nbsp;&nbsp;&nbsp;< article ><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;< p > "Eu ❤️ Python" < /p ><br>
+                    &nbsp;&nbsp;&nbsp;< /article ><br>                   
+                    < /article ><br>
+                </code>
+            </p>
+                <p> Blockquote é um elemento HTML que define uma seção de citação longa. 
+                Isso pode incluir citações de outros autores, trechos de texto, etc. </p>
+                
+                <blockquote cite="https://www.pensador.com/frase/NTUwMzY5/">
+                    <i> "A vida é como andar de bicicleta. Para ter equilíbrio, você tem que se manter em movimento." </i>
+                </blockquote>
+
+                <p> Q é um elemento HTML que define uma seção de citação curta. 
+                Isso pode incluir citações de outros autores, trechos de texto, etc. </p>
+
+            <h2 style="color: #184e77"> Figure, Figcaption e Picture </h2>
+            <p> Figure é um elemento HTML que define conteúdo multimídia, como imagens, gráficos, ilustrações, etc.
+                Isso pode incluir conteúdo relacionado, como legendas, créditos, etc. </p>
+            <p> Figcaption é um elemento HTML que define uma legenda para um elemento < figure >.
+
+                <figure>
+                    <img src="https://cdn.pensador.com/img/frase/ma/rc/marco_aurelio_o_melhor_modo_de_vingar_se_de_um_inimigo_lx0o69x.jpg">
+                    <figcaption>
+                        <i> "O melhor modo de vingar-se de um inimigo é não se assemelhar a ele." </i>
+                    </figcaption>
+                </figure>
+
+                <p> Picture é um elemento HTML que define uma imagem.
+                Isso pode incluir conteúdo relacionado, como legendas, créditos, etc. </p>
+
+                <picture>
+                    <source srcset="https://cdn.pensador.com/img/frase/ma/rc/marco_aurelio_pratica_cada_um_dos_teus_atos_como_se_fos_lx0n3r2.jpg">
+                    <img src="https://cdn.pensador.com/img/frase/ma/rc/marco_aurelio_pratica_cada_um_dos_teus_atos_como_se_fos_lx0n3r2.jpg" alt="Pratica cada um dos teus atos como se fosse o último de tua vida.">
+                </picture>
+                
+    <h2 style="color: #184e77"> O que é SEO? </h2>
+    <p> SEO (Search Engine Optimization) é o processo de otimização de um site para melhorar sua visibilidade nos resultados de pesquisa. 
+        Isso é feito por meio de técnicas como a criação de conteúdo de alta qualidade, a otimização de palavras-chave e a construção de links. 
+        O SEO é importante porque pode ajudar a aumentar o tráfego para um site, o que pode levar a mais vendas, leads e receita. 
+        Além disso, o SEO pode ajudar a melhorar a experiência do usuário, tornando um site mais fácil de navegar e mais rápido de carregar. </p>
+    
+    <h4 style="color:#34a0a4"> Google Search Console </h4>
+    <p> O Google Search Console é uma ferramenta gratuita oferecida pelo Google que permite que os proprietários de sites monitorem e otimizem a visibilidade de seus sites nos resultados de pesquisa. 
+        Isso inclui recursos como relatórios de tráfego, análise de palavras-chave, diagnósticos de problemas de rastreamento, etc. </p>
+    
+    <h4 style="color:#34a0a4"> Google ADS </h4>
+    <p> O Google Ads é uma plataforma de publicidade online oferecida pelo Google que permite que os anunciantes exibam anúncios em resultados de pesquisa, sites parceiros e outros locais. 
+        Isso inclui recursos como segmentação por palavras-chave, lances de anúncios, relatórios de desempenho, etc. </p>
+    
+    <h4 style="color:#34a0a4"> Google Analytics </h4>
+    <p> O Google Analytics é uma ferramenta gratuita oferecida pelo Google que permite que os proprietários de sites monitorem e analisem o tráfego de seus sites. 
+        Isso inclui recursos como relatórios de tráfego, análise de palavras-chave, diagnósticos de problemas de rastreamento, etc. </p>
+
+    <h4 style="color:#34a0a4"> Facebook ADS </h4>
+    <p> O Facebook Ads é uma plataforma de publicidade online oferecida pelo Facebook que permite que os anunciantes exibam anúncios em resultados de pesquisa, sites parceiros e outros locais. 
+        Isso inclui recursos como segmentação por palavras-chave, lances de anúncios, relatórios de desempenho, etc. </p>
+
+    <h6 style="color: #184e77"> Técnicas de SEO </h6>
+    <p> Existem várias técnicas de SEO que podem ser usadas para melhorar a visibilidade de um site nos resultados de pesquisa. 
+        Isso inclui técnicas como a criação de conteúdo de alta qualidade, a otimização de palavras-chave, a construção de links, etc. </p>
+
+        - <b> Título da Página </b>: O título da página é um dos fatores mais importantes para o SEO. <br>
+        - <b> Meta Descrição </b>: A meta descrição é um resumo do conteúdo de uma página da web. <br>
+        - <b> Semântica HTML </b>: O HTML semântico é importante para o SEO porque ajuda os mecanismos de pesquisa a entender o significado e a estrutura do conteúdo de uma página da web. <br>
+        - <b> Schema.org </b>: O Schema.org é uma coleção de marcadores de dados estruturados que podem ser usados para marcar o conteúdo de uma página da web. <br>
+        <pre><code>
+            &lt;div itemscope itemtype="https://schema.org/SportsTeam"&gt;
+              &lt;span itemprop="name"&gt;San Francisco 49ers&lt;/span&gt;
+              &lt;div itemprop="member" itemscope itemtype="https://schema.org/OrganizationRole"&gt;
+                &lt;div itemprop="member" itemscope itemtype="https://schema.org/Person"&gt;
+                  &lt;span itemprop="name"&gt;Joe Montana&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;span itemprop="startDate"&gt;1979&lt;/span&gt;
+                &lt;span itemprop="endDate"&gt;1992&lt;/span&gt;
+                &lt;span itemprop="roleName"&gt;Quarterback&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre><br>
+        <div itemscope itemtype="https://schema.org/SportsTeam">
+            <span itemprop="name">San Francisco 49ers</span>
+            <div itemprop="member" itemscope itemtype="https://schema.org/OrganizationRole">
+              <div itemprop="member" itemscope itemtype="https://schema.org/Person">
+                <span itemprop="name">Joe Montana</span>
+              </div>
+              <span itemprop="startDate">1979</span>
+              <span itemprop="endDate">1992</span>
+              <span itemprop="roleName">Quarterback</span>
+            </div>
+          </div>
+          
+</body>
+</html>
