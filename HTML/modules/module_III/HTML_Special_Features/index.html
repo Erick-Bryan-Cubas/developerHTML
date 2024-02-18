@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML: Special Features</title>
+
+    <style>
+        kbd {
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0 1px 0 #ccc, 0 2px 0 #fff inset;
+            color: #333;
+            display: inline-block;
+            font-size: 0.85em;
+            font-weight: 700;
+            line-height: 1.4;
+            padding: 2px 4px;
+            white-space: nowrap;
+        }
+
+        code {
+            background-color: #f1f1f1;
+            color: red;
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0 1px 0 #ccc, 0 2px 0 #fff inset;
+            color: #333;
+            display: block;
+            font-size: 0.85em;
+            line-height: 1.4;
+            margin-bottom: 1em;
+            padding: 1em;
+            white-space: pre;
+            width: 100%;
+        }
+        pre > p {
+            font-style: italic;
+            color: gray;
+            padding-left: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1> HTML: Recursos Especiais </h1>
+    <p> HTML tem muitos recursos especiais que podem ser usados para criar páginas web mais dinâmicas e interativas. </p>
+
+    <h2> Datalist </h2>
+    <p> O elemento <code> datalist </code> é usado para fornecer uma lista de opções para um campo de entrada. </p>
+
+    
+    <select id="browsers" name="browsers">
+        <option value="">Selecione um navegador... </option>
+        <option value="Edge">Microsoft Edge</option>
+        <option value="Firefox">Mozilla Firefox</option>
+        <option value="Chrome">Google Chrome</option>
+        <option value="Opera">Opera</option>
+        <option value="Safari">Apple Safari</option>
+    </select>
+    <hr>
+    <input list="browsers" name="myBrowser" id="myBrowser" placeholder="Selecione um navegador..."/>
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+    <h2> Code, KBD, PRE </h2>
+    <p> Os elementos <code> code </code>, <code> kbd </code> e <code> pre </code> são usados para exibir texto de maneira especial. </p>
+    
+    <p> O elemento <code> code </code> é usado para exibir texto de código. </p>
+    <code> document.getElementById("demo").innerHTML = "Hello World!"; </code>
+
+    <p> O elemento <code> kbd </code> é usado para exibir texto do teclado. </p>
+    <kbd> Ctrl + C </kbd>
+
+    <p> O elemento <code> pre </code> é usado para exibir texto com formatação pré-definida. </p>
+    <pre>
+        <p> // Hello World Program </p>
+       <code>
+        document.getElementById("demo").innerHTML = "Hello World!";
+        </code>
+    </pre>
+
+    <h2> Details e summary </h2>
+    <p> Os elementos <code> details </code> e <code> summary </code> são usados para criar um widget de detalhes. </p>
+    <details>
+        <summary> Como troco a cor de fundo de um elemento no HTML? </summary>
+        <p> Para executar esta ação, utilize o comando <code> background-color </code> no CSS. </p>         
+    </details>
+
+    <h2> Meter e Progress </h2>
+    <p> Os elementos <code> meter </code> e <code> progress </code> são usados para exibir barras de progresso. </p>
+    <p> O elemento <code> meter </code> é usado para exibir um valor escalar dentro de um intervalo conhecido. </p>
+
+    <meter value="2" min="0" max="10">2 out of 10</meter>
+    <p> O elemento <code> progress </code> é usado para exibir o progresso de uma tarefa. </p>
+    
+    <progress></progress>
+    <progress id="progresso" max="100" min="0" value="10"></progress>
+
+    <script>
+        var progress = document.querySelector('progresso');
+        const interval = setInterval(() => {
+            progress.value += 10;
+            if (progress.value >= 100) {
+                alert('Tarefa concluída!');
+                clearInterval(interval);
+            }
+        }, 1000);
+    </script>
+
+    <h2> Mark e JavaScript </h2>
+    <p> O elemento <code> mark </code> é usado para destacar partes de um texto. </p>
+    
+    <input type="text" id="busca"><br>
+    <p id="descricao"> Aplica-te a todo o instante com toda a atenção, 
+        para terminar o trabalho que tens nas tuas mãos e liberta-te de todas as outras preocupações.<br>
+        Delas ficarás livre se executares cada ação da tua vida como se fosse a última.
+    </p>
+    <script>
+        var searchField = document.getElementById('busca');
+        var descriptionObject = document.getElementById('descricao');
+        var textToSearch = descriptionObject.innerHTML;
+    
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Adiciona escape aos caracteres especiais
+        }
+    
+        function realizaBusca(busca) {
+            busca = escapeRegExp(busca); // Escapa caracteres especiais
+            if(busca === '') {
+                descriptionObject.innerHTML = textToSearch; // Restaura o texto original se a busca estiver vazia
+            } else {
+                const regex = new RegExp(`(${busca})(?!(.(?!<mark>))*<\/mark>)`, 'gi');
+                descriptionObject.innerHTML = textToSearch.replace(regex, '<mark>$1</mark>');
+            }
+        }
+    
+        searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+    </script>
+    
+    <h2> Canvas </h2>
+    <p> O elemento <code> canvas </code> é usado para desenhar gráficos, em tempo real, usando JavaScript. </p>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        Seu navegador não suporta a tag canvas.
+    </canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        // Dados para o gráfico de colunas (valores e cores)
+        var dados = [
+            {valor: 25, cor: "#4cc9f0"},
+            {valor: 45, cor: "#3f37c9"},
+            {valor: 75, cor: "#b5179e"}
+        ];
+
+        var larguraColuna = 50;
+        var espacoEntreColunas = 10;
+        var xInicial = 10;
+
+        // Desenhar as colunas
+        for(var i = 0; i < dados.length; i++) {
+            ctx.fillStyle = dados[i].cor;
+            var x = xInicial + (i * (larguraColuna + espacoEntreColunas));
+            var y = c.height - dados[i].valor;
+            ctx.fillRect(x, y, larguraColuna, dados[i].valor);
+        }
+    </script>
+
+        
+</body>
+</html>
