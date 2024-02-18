@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Tables with HTML</title>
+    <h1> Criando Tabelas com HTML </h1>
+    <h2> O que é uma Tabela? </h2>
+    <p> Uma tabela é uma coleção de dados organizados em linhas e colunas. <br>
+    As tabelas são úteis para organizar e exibir dados, mas elas podem ser difíceis de ler em uma página da web. <br>
+    Além de exibir dados em um formato mais organizado e fácil de ler. também é possível adicionar links, imagens e outros elementos a uma tabela. </p>
+    <h2> Tag < table > </h2>
+    <p> A tag < table > é usada para criar uma tabela. <br>
+    A tag < table > contém uma ou mais tags < tr >, cada uma com uma ou mais tags < th > e / ou < td >. <br>
+    <br>
+    - <mark> < border > </mark> - especifica a largura da borda da tabela. <br>
+    <table border="1">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr>
+            <td> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr>
+            <td> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    - <mark> cellspacing </mark> - especifica o espaço entre as células. <br>
+    <table cellspacing="5">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr>
+            <td> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr>
+            <td> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    - <mark> cellpadding </mark> - especifica o espaço entre o conteúdo da célula e a borda da célula. <br>
+    <table cellpadding="5">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr>
+            <td> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr>
+            <td> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    - <mark> < summary > </mark> - especifica um resumo da tabela. <br>
+    <table summary="Tabela de Informações Pessoais" border="1">
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr>
+            <td> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr>
+            <td> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    <h2> Tag < tr > </h2>
+    <p> A tag < tr > é usada para definir cada linha de uma tabela. <br>
+    - <mark> < align > </mark> - especifica a posição horizontal do texto em uma célula. <br>
+    <table border="1">
+        <tr align="center">
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr align="center">
+            <td> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr align="center">
+            <td> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    - <mark> < bgcolor > </mark> - especifica a cor de fundo de uma célula. <br>
+    <table border="1">
+        <tr bgcolor="yellow">
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr bgcolor="yellow">
+            <td> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr bgcolor="yellow">
+            <td> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    - <mark> < valign > </mark> - especifica a posição vertical do texto em uma célula. <br>
+    <table border="1">
+        <tr valign="top">
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr valign="top">
+            <td> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr valign="top">
+            <td> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    - <mark> < id > </mark> - especifica um identificador exclusivo para um elemento. <br>
+    <table border="1">
+        <tr id="linha1">
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr id="linha2">
+            <td> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr id="linha3">
+            <td> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+
+    <h2> Tag < td > </h2>
+    <p> A tag < td > é usada para definir cada célula de uma linha. <br>
+    - <mark> < abbr > </mark> - especifica uma abreviação ou acrônimo para o conteúdo de uma célula. <br>
+    <table border="1">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr>
+            <td abbr="João"> J </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr>
+            <td abbr="Maria"> M </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    - <mark> < colspan > </mark> - especifica o número de colunas que uma célula deve se estender. <br>
+    <table border="1">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr>
+            <td colspan="2"> João </td>
+            <td> Masculino </td>
+        </tr>
+        <tr>
+            <td> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>    
+
+    - <mark> < headers > </mark> - especifica uma ou mais células de cabeçalho associadas a uma célula de dados. <br>
+    <table border="1">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr>
+            <td headers="nome"> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr>
+            <td headers="nome"> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    - <mark> < rowspan > </mark> - especifica o número de linhas que uma célula deve se estender. <br>
+    <table border="1">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr>
+            <td rowspan="2"> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    <h2> Tag < th > </h2>
+    <p> A tag < th > é usada para definir cada cabeçalho de uma tabela. <br>
+    <table border="1">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Sexo </th>
+        </tr>
+        <tr>
+            <td> João </td>
+            <td> 25 </td>
+            <td> Masculino </td>
+        </tr>
+        <tr>
+            <td> Maria </td>
+            <td> 22 </td>
+            <td> Feminino </td>
+        </tr>
+    </table>
+
+    <h2> Tag < tbody >, < thead > e < tfoot > </h2>
+    <p> A tag < tbody > é usada para agrupar o conteúdo do corpo de uma tabela. <br>
+    A tag < thead > é usada para agrupar o conteúdo do cabeçalho de uma tabela. <br>
+    A tag < tfoot > é usada para agrupar o conteúdo do rodapé de uma tabela. <br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th> Nome </th>
+                <th> Idade </th>
+                <th> Sexo </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> João </td>
+                <td> 25 </td>
+                <td> Masculino </td>
+            </tr>
+            <tr>
+                <td> Maria </td>
+                <td> 22 </td>
+                <td> Feminino </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td> Total </td>
+                <td> 47 </td>
+                <td> </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2> Estilizando Tabelas </h2>
+    <p> As tabelas podem ser estilizadas com CSS. <br>
+    
+
+<body>
+    
+</body>
+</html>
